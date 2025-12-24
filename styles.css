@@ -1,0 +1,335 @@
+:root {
+ --text-color: #1a1c20;
+ --link-color: #4a76ee;
+ --background-color: #eeeff1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/*nav*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+/*left nav ko*/
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+/*right nav ko*/
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+}
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+nav .right a span{
+    margin-left: 5px;
+}
+
+/* home */
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.home-section .text{
+    font-size: 20px;
+    flex: 5;
+}
+
+.home-section .text .links{
+    margin-top: 25px;
+}
+
+.home-section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.home-section .text .links a:hover{
+    color: var(--text-color);
+    border-color: 2px solid var(--text-color);
+}
+
+.home-section .text h2{
+    font-size: 45px;
+}
+.home-section .Image{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.home-section .Image img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+/* About Me */
+.aboutme-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.aboutme-section h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.aboutme-section h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.aboutme-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.aboutme-section .achievements ul{
+    padding: 10px 60px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 10px;
+    box-shadow: 2px 3px;
+    margin-bottom: 20px;
+}
+.aboutme-section .hobbies ul{
+    padding: 10px 60px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 10px;
+    box-shadow: 2px 3px;
+    margin-bottom: 20px;
+}
+/* Skills */
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.skills-section h2{
+    text-align: center;
+    font-size: 35px;
+}
+.skills-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 10px;
+}
+.skills-section .cells .cell img{
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+.skills-section .cells .cell span{
+    font-size: 18px;
+}
+
+/* Projects */
+
+.projects-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.projects-section h2{
+    text-align: center;
+    font-size: 35px;
+}
+.projects-section .group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.projects-section .group .card {
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    align-content: center;
+    margin-bottom: 200px;
+}
+
+.projects-section .group .card img{
+    height: 300px;
+    width: 540px;
+    border-radius: 10px;
+}
+
+/* Contacts */
+
+ .contacts-section{
+        padding: 0 50px;
+        margin-bottom: 100px;
+    }
+    .contacts-section h2{
+        font-size: 35px;
+    }
+    .contacts-section .group{
+        display: flex;
+        gap: 50px;
+    }
+    .contacts-section .group .text{
+        margin-top: 20px;
+        flex: 3;
+    }
+    .contacts-section .group form{
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts-section .group form input,
+    .contacts-section .group form textarea{
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid var(--link-color);
+        background-color: transparent;
+        padding: 10px;
+        margin-bottom: 15px;
+        outline: none;
+    }
+    .contacts-section .group form button{
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        background-color: var(--link-color);
+        border: none;
+        height: 50px;
+        cursor: pointer;
+        transition: .2s;
+    }
+    .contacts-section .group form button:hover{
+        filter: brightness(.9);
+    }
+
+@media (max-width: 1200px){
+    .projects-section .group{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .projects-section .group .card img{
+        height: 360px;
+        width: 640px;
+    }
+}
+
+@media(max-width: 850px){
+    .home-section .text h2{
+        font-size: 35px;
+    }
+}
+@media(max-width: 740px){
+    .home-section{
+        flex-direction: column-reverse;
+    }
+
+    .home-section .Image img{
+        width: 300px;
+        height: 300px;
+    }
+    /* Projects */
+    .projects-section .group{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .projects-section .group .card img{
+        height: 300px;
+        width: 540px;
+    }
+
+    /* Contacts */
+    .contacts-section .group{
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width: 600px){
+    /*mobile navbar*/
+    nav {
+        padding: 0 20px;
+    }
+    nav .right a{
+        font-size: 22px;
+    }
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+    nav .right a span{
+        display: none;
+    }
+    /* HOME */
+    .home-section{
+        padding: 0 20px;
+    }
+
+    .home-section .text h2{
+        font-size: 30px;
+    }
+    /* SKILLS */
+    .skills-section{
+        padding: 0 20px;
+    }
+    .skills-section .cells .cell span{
+        font-size: 16px;
+    }
+    /* Projects */
+    .projects-section {
+        padding: 0 20px;
+    }
+    /* Contact */
+    .contacts-section {
+        padding: 0 20px;
+    }
+   
+}
