@@ -281,8 +281,8 @@ nav .right a span{
         gap: 50px;
     }
     .projects-section .group .card img{
-        height: 240px;
-        width: 480px;
+        height:300px;
+        width: 540px;
     }
 
     /* Contacts */
